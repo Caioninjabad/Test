@@ -1,0 +1,43 @@
+p {
+	font-size: 20px;
+}
+body {
+}
+em strong{
+	color: cadetblue;
+}
+ul{
+	display: inline-block;
+	vertical-align: top;
+}
+#cavala{
+	width: 100%;
+	
+}
+
+.principal{
+	padding: 30px;
+}
+
+.itens{
+	font-style: italic;
+	padding: 5px;
+}
+.beneficios{
+	padding: 20px;
+
+}
+.Be{
+	text-align: center;
+	height: 110px;
+	padding-top: 50px;
+	margin: 20px;
+}
+.cavalo{
+	width: 50%;
+	align-content: center;
+}
+.align{
+	text-align: center;
+	color: cadetblue;
+}

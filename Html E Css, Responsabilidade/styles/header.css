@@ -1,0 +1,133 @@
+.cabecalho_menu-hamburguer {
+	width: 40px;
+	height: 40px;
+	background-image: url("../img/Menu.svg");
+	display: inline-block;
+	background-position: center;
+	background-repeat: no-repeat;
+	margin-right: 14px;
+}
+.cabeçalho {
+	background-color: var(--branco);
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	position: relative;
+}
+.botão_ativo{
+	background-color: var(--azul-degrade);
+}
+.container {
+	display: flex;
+	align-items: center;
+}
+.container-imagem {
+	padding: 0.3em;
+}
+.lista-menu {
+	position: absolute;
+    left: -100vw;
+    transition: .50s;
+    top: 100%;
+    width: 60vw;
+    font-family: var(--fonte-principal);
+	font-weight: 400;
+	font-size: 16px;
+}
+.menu-ativo {
+	left: 0;
+    transition: .50s;
+}
+.lista-menu_link {
+	background: var(--azul-degrade);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	background-clip: text;
+	text-transform: uppercase;
+	text-decoration: none;
+}
+.lista-menu_titulo, .lista-menu_item {
+	padding: 1em;
+	background-color: var(--branco);
+}
+.lista-menu_titulo {
+	color: var(--laranja);
+	font-size: 14px;
+	font-weight: 700;
+}
+.container_titulo {
+	display: none;
+}
+
+.container_texto, 
+.opções, 
+.container_titulo{
+	display: none;
+}
+@media screen and (min-width: 1024px) {
+	.lista-menu_tablet{
+		top: 100%;
+		display: none;
+		position: absolute;
+	}
+	.opções_botão{
+		display: none;
+	}
+	.opções_botão:checked ~ .lista-menu_tablet{
+		display: block;
+		width: auto;
+	}
+	.container_tablet {
+		display: block;
+		margin-left: 4em;
+	}
+	.container_titulo, 
+	.container_titulo-negrito {
+		font-family: var(--fonte-secundaria);
+		font-size: 30px;
+	}
+	.container_titulo {
+		font-weight: 400;
+		display: block;
+	}
+	.container_titulo-negrito {
+		font-weight: 700;
+	}
+	.opções{
+		display: flex;
+	}
+	.opções_item {
+		padding: 0 1em;
+		text-transform: uppercase;
+	}
+	.opções_link {
+		text-decoration: none;
+		color: var(--preto);
+	}
+	.container_imagem-transparente {
+		display: none;
+	}
+	.cabecalho_menu-hamburguer{
+		display: none;
+	}
+}
+@media screen and (min-width: 1728px) {
+	.container_link {
+		padding-left: 40px;
+		font-size: 18px;
+		display: flex;
+		align-items: center;
+		text-decoration: none;
+		color: var(--preto);
+	}
+	.cabeçalho{
+		padding: 0 2em;
+	}
+	.opções {
+		margin-right: auto;
+		margin-left: 2.5em;
+	}
+	.container_texto {
+		display: block;
+	}
+}

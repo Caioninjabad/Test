@@ -1,0 +1,212 @@
+:root{
+    --cinza-escuro: #3A404E;
+    --cinza-claro: #667085;
+    --cinza-borda: #EAECF0;
+    --cinza: #101828;
+    --vermelho: #8E2424;
+    --vermelho-alternativo: #8E24240D;
+    --branco: #ffffff;
+    --fonte-principal: 'Inter';
+    --branco-alternativo: #F9FAFB;
+}
+.cabecalho, 
+.Sobre,
+.Conquista,
+.Talentos,
+.Vagas,
+.Colaborador,
+.rodapé {
+	font-family: var(--fonte-principal);
+}
+.cabecalho_itens{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.cabecalho_logo{
+    display: flex;
+    align-items: center;
+}
+
+.cabecalho_titulo {
+    font-size: 18px;
+    font-weight: 500;
+    margin: 0 0.5em;
+}
+
+.cabecalho_menu{
+    display: flex;
+    margin: 0 15em 0 1em;
+}
+
+.lista_itens {
+    margin: 0 1em;
+}
+
+.cabecalho_lista{
+    display: flex;
+    margin: 2em;
+    
+}
+
+.cabecalho_link{
+    text-decoration: none;
+    color: var(--cinza-claro);
+}
+.botao_cadastro{
+	text-decoration: none;
+    background-color: var(--vermelho);
+    color: var(--branco);
+    padding: 10px 18px;
+    border-radius: 5px;
+}
+.Sobre {
+    padding: 2em;
+	margin-top: 5em;
+	text-align: center;
+}
+.Sobre_subtitulo {
+	color: var(--vermelho);
+    font-weight: 600;
+}
+.Sobre_titulo {
+    font-size: 48px;
+    font-weight: 600;
+	margin: 1em 0;
+}
+.Sobre_texto {
+    font-weight: 400;
+    font-size: 20px;
+    color: var(--cinza-claro);
+    margin: 0 10em;
+}
+.Conquista {
+    margin-top: 6em;
+}
+.Conquista_container {
+    display: flex;
+}
+.Conquista_numeros {
+    padding-bottom: 10px;
+    color: var(--vermelho);
+    font-size: 60px;
+}
+.Conquista_itens {
+    padding-left: 2em;
+}
+.Conquista_titulo {
+    padding-bottom: 0.8em;
+    font-size: 18px;
+    color: var(--cinza);
+}
+.Conquista_texto {
+    color: var(--cinza-claro);
+}
+.Talentos_container {
+    margin-top: 5em;
+    text-align: center;
+}
+.Talentos_subtitulo {
+    font-weight: 500;
+    font-size: 14px;
+    color: var(--vermelho);
+    text-decoration: none;
+    text-align: center;
+    background: var(--vermelho-alternativo);
+    padding: 4px;
+    border-radius: 16px;
+}
+.Talentos_titulo {
+    font-size: 36px;
+    font-weight: 600;
+    padding: 0.5em 0;
+}
+.Talentos_texto {
+    font-size: 20px;
+    font-weight: 400;
+    color: var(--cinza-claro);
+    padding-bottom: 3em;
+}
+.Vagas_container {
+    margin: 4em 15em;
+    text-align: left;
+}
+.Vagas_titulo {
+    margin-top: 4em;
+    font-weight: 500;
+    font-size: 20px;
+    margin-right: 8em;
+}
+.Vaga {
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 2.5em;
+}
+.Vagas_itens {
+    padding: 2em;
+    border: 2px solid var(--cinza-borda);
+    border-radius: 15px;
+    margin-top: 3em;
+}
+.Vagas_dados {
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--cinza-claro);
+    display: flex;
+}
+.Vaga-dado {
+    margin-right: 1.2em;
+}
+.Colaborador_container {
+    background: var(--vermelho-alternativo);
+    padding: 4.5em;
+    margin: 10em;
+    text-align: center;
+}
+.Colaborador_subtitulo {
+    font-weight: 600;
+    font-size: 14px;
+    color: var(--vermelho);
+}
+.Colaborador_titulo {
+    padding: 0.8em 0;
+    font-size: 36px;
+    font-weight: 500;
+}
+.Colaborador_nome {
+    padding: 0.8em 0;
+    font-weight: 500;
+    font-size: 16px;
+}
+.rodapé {
+    background-color: var(--branco-alternativo);
+}
+.rodapé_container {
+    padding: 8em;
+    margin: 5em;
+    text-align: center;
+}
+.rodapé_titulo {
+    font-size: 36px;
+    font-weight: 600;
+}
+.rodapé_texto {
+    padding: 1.5em;
+    color: var(--cinza-claro);
+    font-size: 20px;
+    font-weight: 400;
+}
+.rodapé_copyright {
+    padding-top: 1.5em;
+    color: var(--cinza-claro);
+    font-size: 16px;
+    font-weight: 400;
+}
+.rodapé_email {
+    margin: 1em;
+    width: 35%;
+    border: 1px solid #D0D5DD;
+    padding: 1em;
+    border-radius: 8px;
+}
